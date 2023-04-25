@@ -7,3 +7,26 @@
 * {
   font-family: "Open Sans", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+aside:hover::-webkit-scrollbar-thumb {
+  display: block;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}

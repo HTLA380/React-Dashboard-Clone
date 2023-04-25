@@ -1,0 +1,9 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+.e-tooltip-wrap {
+  margin-top: 0.25rem;
+}
+
+.e-tooltip-wrap .e-tip-content {
+  font-size: 0.7rem;
+}

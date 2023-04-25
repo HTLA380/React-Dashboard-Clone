@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -7,7 +8,7 @@ module.exports = {
         flatBlack: "#33373E",
         black: "#20232A",
         blue: "#59BEE7",
-        green: "#03C9D7",
+        cyan: "#03C9D7",
         purple: "#7352FF",
         red: "#FF5C8E",
         indigo: "#1E4DB7",

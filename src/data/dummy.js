@@ -31,17 +31,17 @@ import { HiOutlineRefresh } from "react-icons/hi";
 import { TiTick } from "react-icons/ti";
 import { GiLouvrePyramid } from "react-icons/gi";
 import { GrLocation } from "react-icons/gr";
-// import avatar from './avatar.jpg';
-// import avatar2 from './avatar2.jpg';
-// import avatar3 from './avatar3.png';
-// import avatar4 from './avatar4.jpg';
+import avatar from "./avatar.jpg";
+import avatar2 from "./avatar2.jpg";
+import avatar3 from "./avatar3.png";
+import avatar4 from "./avatar4.jpg";
 // import product1 from './product1.jpg';
 // import product2 from './product2.jpg';
 // import product3 from './product3.jpg';
 // import product4 from './product4.jpg';
-// import product5 from './product5.jpg';
-// import product6 from './product6.jpg';
-// import product7 from './product7.jpg';
+import product5 from "./product5.jpg";
+import product6 from "./product6.jpg";
+import product7 from "./product7.jpg";
 // import product8 from './product8.jpg';
 
 export const links = [
@@ -77,5 +77,53 @@ export const links = [
       { name: "pyramid", icon: <GiLouvrePyramid /> },
       { name: "stacked", icon: <AiOutlineBarChart /> },
     ],
+  },
+];
+
+export const CartItems = [
+  {
+    image: product5,
+    name: "butterscotch ice-cream",
+    category: "milk product",
+    price: 250,
+  },
+  {
+    image: product6,
+    name: "supreme fresh tomato",
+    category: "vegetable Item",
+    price: 450,
+  },
+  {
+    image: product7,
+    name: "red color candy",
+    category: "food item",
+    price: 190,
+  },
+];
+
+export const messageData = [
+  {
+    image: avatar2,
+    title: "Roman Joined the Team!",
+    description: "Congratulate him",
+    time: "9:08 AM",
+  },
+  {
+    image: avatar3,
+    title: "New message received",
+    description: "Salma sent you new message",
+    time: "11:56 AM",
+  },
+  {
+    image: avatar4,
+    title: "New Payment received",
+    description: "Check your earnings",
+    time: "4:39 AM",
+  },
+  {
+    image: avatar,
+    title: "Jolly completed tasks",
+    description: "Assign her new tasks",
+    time: "1:12 AM",
   },
 ];
