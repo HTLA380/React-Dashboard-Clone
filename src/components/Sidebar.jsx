@@ -6,10 +6,11 @@ import { links } from "../data/dummy";
 import { UseGlobalContext } from "../context/CustomContext";
 
 const Sidebar = () => {
-  const { isSideBarActive, setIsSideBarActive } = UseGlobalContext();
+  const { isSideBarActive, setIsSideBarActive, themeColor } =
+    UseGlobalContext();
 
   const activeLink =
-    "flex gap-3 items-center capitalize mt-3 bg-red text-white py-3 px-4 rounded";
+    "flex gap-3 items-center capitalize mt-3 text-white py-3 px-4 rounded";
   const normalLink =
     "flex gap-3 items-center capitalize mt-3 text-gray-800 hover:bg-gray-100 dark:hover:text-black py-3 px-4 rounded dark:text-milkyWhite";
 
@@ -44,6 +45,9 @@ const Sidebar = () => {
                       className={({ isActive }) =>
                         isActive ? activeLink : normalLink
                       }
+                      style={({ isActive }) => ({
+                        background: isActive ? themeColor : "",
+                      })}
                       key={link.name}>
                       {link.icon}
                       <span>{link.name}</span>

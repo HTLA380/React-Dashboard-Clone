@@ -10,7 +10,7 @@ const Cart = () => {
   const { dispatch } = UseGlobalContext();
 
   return (
-    <div className="z-[25] w-[400px] bg-white dark:bg-flatBlack dark:text-white min-h-screen fixed top-0 right-0 p-8">
+    <div className="z-[25] w-[400px] bg-white dark:bg-[#484b52] dark:text-white min-h-screen fixed top-0 right-0 p-8">
       <div className="flex justify-between items-center">
         <h3 className="font-semibold text-lg">Shopping Cart</h3>
         <span

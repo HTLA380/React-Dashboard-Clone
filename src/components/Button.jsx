@@ -1,4 +1,5 @@
 import React from "react";
+import { UseGlobalContext } from "../context/CustomContext";
 
 const Button = ({ content }) => {
   return (
@@ -9,10 +10,13 @@ const Button = ({ content }) => {
 };
 
 export const ButtonExtend = ({ content, func }) => {
+  const { themeColor } = UseGlobalContext();
+
   return (
     <button
       onClick={func}
-      className="w-full py-3 mt-5 bg-red text-white rounded-lg hover:drop-shadow-xl capitalize">
+      className="w-full py-3 mt-5  text-white rounded-lg hover:drop-shadow-xl capitalize"
+      style={{ backgroundColor: themeColor }}>
       {content}
     </button>
   );

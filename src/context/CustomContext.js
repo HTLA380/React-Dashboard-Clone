@@ -27,10 +27,24 @@ const reducer = (state, action) => {
 export const UseContextProvider = ({ children }) => {
   const [isSideBarActive, setIsSideBarActive] = useState(true);
   const [initialState, dispatch] = useReducer(reducer, navIconInitialState);
+  const [isSettingActive, setIsSettingActive] = useState(false);
+  const [currentTheme, setCurrentTheme] = useState("light");
+  const [themeColor, setThemeColor] = useState("#7352FF");
 
   return (
     <GlobalContext.Provider
-      value={{ isSideBarActive, setIsSideBarActive, initialState, dispatch }}>
+      value={{
+        isSideBarActive,
+        setIsSideBarActive,
+        initialState,
+        dispatch,
+        isSettingActive,
+        setIsSettingActive,
+        currentTheme,
+        setCurrentTheme,
+        themeColor,
+        setThemeColor,
+      }}>
       {children}
     </GlobalContext.Provider>
   );
